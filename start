@@ -39,7 +39,10 @@ cp /etc/resolv.conf /var/spool/postfix/etc/resolv.conf
 # lets give postfix some time to start
 sleep 3
 
+tail -qF /var/log/syslog &
+
 # wait until postfix is dead (triggered by trap)
 while kill -0 "`cat /var/spool/postfix/pid/master.pid`"; do
   sleep 5
 done
+
