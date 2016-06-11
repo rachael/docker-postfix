@@ -1,6 +1,6 @@
 FROM ubuntu:xenial
 
-RUN apt -y update && apt install -y postfix sasl2-bin rsyslog
+RUN apt -y update && apt install -y postfix rsyslog
 
 ADD etc /etc
 
