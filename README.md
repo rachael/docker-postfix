@@ -1,3 +1,3 @@
 # docker-postfix
 
-Postfix docker image used for mail.rachael.io
+Postfix docker image configured for mail.rachael.io
