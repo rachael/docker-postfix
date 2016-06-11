@@ -24,7 +24,8 @@ trap "postfix stop" SIGTERM
 trap "postfix reload" SIGHUP
 
 # link hosts (otherwise links could be outdated)
-cp /etc/hosts /var/spool/postfix/etc/hosts
+cp /etc/hosts /var/spool/postfix/etc/hosts 
+cp /etc/resolv.conf /var/spool/postfix/etc/resolv.conf
 
 # start saslauthd
 /etc/init.d/saslauthd start
