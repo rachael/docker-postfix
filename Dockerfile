@@ -1,6 +1,7 @@
 FROM ubuntu:xenial
 
 RUN apt -y update && apt install -y postfix rsyslog
+RUN useradd -m -U rae
 
 ADD etc /etc
 
