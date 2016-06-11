@@ -27,6 +27,9 @@ trap "postfix reload" SIGHUP
 cp /etc/hosts /var/spool/postfix/etc/hosts 
 cp /etc/resolv.conf /var/spool/postfix/etc/resolv.conf
 
+# start rsyslog
+/etc/init.d/rsyslog start
+
 # start saslauthd
 /etc/init.d/saslauthd start
 
