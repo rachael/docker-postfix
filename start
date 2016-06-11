@@ -34,6 +34,7 @@ cp /etc/resolv.conf /var/spool/postfix/etc/resolv.conf
 /etc/init.d/saslauthd start
 
 # start postfix
+postmap /etc/postfix/virtual
 /etc/init.d/postfix start
 
 # lets give postfix some time to start
