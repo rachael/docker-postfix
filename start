@@ -31,6 +31,7 @@ cp /etc/resolv.conf /var/spool/postfix/etc/resolv.conf
 /etc/init.d/rsyslog start
 
 # start postfix
+newaliases
 postmap /etc/postfix/virtual
 /etc/init.d/postfix start
 
