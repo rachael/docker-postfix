@@ -9,9 +9,7 @@ dependencies:
 
 test:
   override:
-    - docker run -d --hostname mail.rachael.io \
-        -v /var/run/saslauthd:/var/spool/postfix/var/run/saslauthd \
-        -p 25:25 rachaelp/docker-postfix
+    - docker run -d --hostname mail.rachael.io -v /var/run/saslauthd:/var/spool/postfix/var/run/saslauthd -p 25:25 rachaelp/docker-postfix; sleep 10
     - curl --retry 10 --retry-delay 5 -v http://localhost:25
 
 deployment:
