@@ -1,4 +1,4 @@
-# docker-postfix [![Docker Pulls](https://img.shields.io/docker/pulls/rachaelp/docker-postfix.svg?maxAge=2592000)](https://hub.docker.com/r/rachaelp/docker-postfix) [![CircleCI](https://img.shields.io/circleci/project/rachael/docker-postfix.svg?maxAge=2592000)](https://circleci.com/gh/rachael/docker-postfix) [![GitHub forks](https://img.shields.io/github/forks/rachael/docker-postfix.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/rachael/docker-postfix)
+# docker-postfix [![Docker Pulls](https://img.shields.io/docker/pulls/rachaelp/docker-postfix.svg?maxAge=3600)](https://hub.docker.com/r/rachaelp/docker-postfix) [![CircleCI](https://img.shields.io/circleci/project/rachael/docker-postfix.svg?maxAge=3600)](https://circleci.com/gh/rachael/docker-postfix) [![GitHub forks](https://img.shields.io/github/forks/rachael/docker-postfix.svg?style=social&label=Fork&maxAge=3600)](https://github.com/rachael/docker-postfix)
 
 Postfix docker image configured for mail.rachael.io. Forwards from `*@rachael.io` to `rachael.passov+rachaelio@gmail.com` and allows me to send mail from gmail as `anything@rachael.io` (once I've set up the alias at gmail.com).
 
