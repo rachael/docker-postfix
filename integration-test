@@ -1,0 +1,17 @@
+#!/bin/bash
+set -exv
+
+start &
+
+declare i=0 timeout=true
+while [ $i -lt 10 ]; do
+    if nc -z localhost 25; then
+        unset timeout
+        break
+    fi
+    sleep 1
+    let i++ || :
+done
+[[ -z "$timeout" ]] || exit 69
+
+swaks --server localhost --to "root@$HOSTNAME"
