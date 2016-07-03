@@ -48,4 +48,4 @@ Make sure you have MX and A records set up for your `mail` subdomain (the A reco
 
 ## TODO
 
-An install script so you don't have to manually replace my shit. Really though it's not that hard so it'll probably be a while if ever :)
+A generic image with a configuration script so you don't have to manually replace my shit. Really though it's not that hard so it'll probably be a while if ever :)
