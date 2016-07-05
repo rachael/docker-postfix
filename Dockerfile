@@ -6,7 +6,18 @@ RUN image-prep
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN lazy-apt ssl-cert postfix rsyslog swaks netcat
+RUN lazy-apt \
+	# importante
+	ssl-cert \
+	# meat
+	postfix \
+	# auth
+	sasl2-bin libsasl2-modules \
+	# postfix only likes to log to syslog baby
+	rsyslog \
+	# debugging
+	swaks netcat \
+ && :
 RUN useradd -m -U rae \
  && adduser postfix sasl
 
